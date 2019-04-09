@@ -1,0 +1,32 @@
+
+<select [(ngModel)]="selectedYear">
+    <option *ngFor="let year of years" [value]="year">
+      {{year}}
+    </option>
+  </select>
+  <select [(ngModel)]="selectedMonth">
+      <option *ngFor="let p of months" [value]="p.value">
+        {{p.month}}
+      </option>
+    </select>
+
+    <button (click)="getWeather()">Submit</button>
+<table style=" display: flex; flex-direction: column; justify-content: center;">
+  <thead>
+    <tr> 
+      <th *ngFor="let dayName of weekDays" style="width:100px">{{dayName}}</th>
+    </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let week of calendarData?.weeks" style="Display:flex">
+    <td *ngFor="let day of week.days" style="width:102px;display: flex;justify-content: center">
+        <tr>
+        <td style="justify-content: center;display: flex;"><span>{{day?.weekDay}}</span></td>
+      </tr>
+      <tr>
+        <td><span>{{day?.weather}}</span></td>
+      </tr>
+    </td>
+  </tr>
+</tbody>
+</table>
