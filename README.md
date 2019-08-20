@@ -2,16 +2,16 @@
 ### Develop by Jairo Blanco Aldao
 ### Made with Visual Studio Code
 
-##1.Introduction
+## 1.Introduction
 SimpleCalendar is a simple PoC of how I'll implement a very simple calendar from scratch. 
 For this exercise I decided to do a Net Core API and Angular Front, it can be done in the front size makeing calls to OpenWeather API and parseing the returned values and generating the calendar days with the same algorithm used in the Net Core part. Otherwise, I thought it was more appropiate to show as many skills as I can.
 
 Anotation: Due to time the code is not as clean as I'd like.
 
-##2.Implementation
+## 2.Implementation
 For this part I used Angular 7 + TypeScript, no external libraries have been used for the development.
 
-###2.1 Architecture
+### 2.1 Architecture
 This exercise was really simple and no escalable, so the architecture es really simple and just for mention it, the project is divided en 3 layers:
 
 * Model: Which includes all the modules/entities/objects used by the app
